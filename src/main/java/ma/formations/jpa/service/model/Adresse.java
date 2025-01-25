@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 
 @Entity
 @NoArgsConstructor
@@ -23,8 +22,8 @@ public class Adresse {
     private String ville;
     private String codePostal;
 
-    @OneToOne(mappedBy = "adresse")
-    private Personne personne;
+    // @OneToOne(mappedBy = "adresse")
+    //private Personne personne;
 
     @Override
     public String toString() {
